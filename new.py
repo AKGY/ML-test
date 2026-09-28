@@ -3,7 +3,7 @@ import urllib.request
 from bs4
 import BeautifulSoup
 
-url = ""
+url = "https://news.naver.com/section/105"
 
 response = urllib.request.urlopen()
 
