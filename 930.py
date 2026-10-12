@@ -20,7 +20,7 @@ for result in results:
     soup = BeautifulSoup(response, "html.parser")
     print("링크: ", url_article)
 
-    article = soup.select("#dic_area")
+    article = soup.select_one("#dic_area")
     print("내용: ", article.text)
 
     #soup_dic = BeautifulSoup(response, "html.parser")
