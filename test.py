@@ -15,4 +15,20 @@ for result in results:
     print("제목 : ", result.strong.string)
     url_article = result.attrs["href"]
     print("링크 : ",url_article)
-    #time.sleep(1)
+    response_loop = req.urlopen(url_article)
+    soup_dic = BeautifulSoup(response_loop, "html.parser")
+    content = soup_dic.select_one("#dic_area")
+    #print("내용 : ",content.contents)
+    output = ""
+
+    for item in content.contents:
+        stripped = str(item).strip()
+        if stripped == "":
+            continue
+        if stripped[0] not in ["<","/"]:
+            output += stripped
+
+    print(output)
+    print()
+
+    time.sleep(1)
