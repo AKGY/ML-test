@@ -24,6 +24,4 @@ time.sleep(3)
 
 browser.save_screenshot("Website.png")
 
-print("JS ERRORS:", browser.get_log("browser"))
-
 browser.quit()
