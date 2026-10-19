@@ -42,7 +42,7 @@ data = {
 
 res = session.post(url, data=data) 
 
-url_my = "https://www.hanbit.co.kr/my/shopping?tab=mileage"
+url_my = "https://www.hanbit.co.kr/my"
 
 res = session.get(url_my)
 res.raise_for_status
