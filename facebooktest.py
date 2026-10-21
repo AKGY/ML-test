@@ -6,7 +6,7 @@ import time
 
 
 USER = "zzzxwe@jj.ac.kr"
-PASS = "T3V2ufjf6WG-!Y_"
+PASS = ""
 
 session = requests.session()
 

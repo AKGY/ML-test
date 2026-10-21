@@ -27,8 +27,8 @@ csrf_token = res.json()["csrfToken"]
 
 session.headers.update(headers)
 
-USER = "zzzxwe"
-PASS = "K@Ke8X!@@pQZjiW"
+USER = ""
+PASS = ""
 data = { 
     "loginId": USER,
     "password": PASS,
