@@ -7,8 +7,8 @@ from selenium.webdriver.common.keys import Keys
 
 url = "https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
 
-USER = ""
-PASS = ""
+USER = input("네이버 아이디: ")
+PASS = getpass.getpass("네이버 비밀번호: ")
 
 #드라이버 추출하기
 
@@ -34,10 +34,10 @@ browser.get(url)
 
 element_id = browser.find_element(By.ID,"id") #id텍스트 입력상자
 element_id.clear()
-element_id.send_keys("")
+element_id.send_keys(USER)
 element_pw = browser.find_element(By.ID,"pw") #비번 텍스트 입력상자
 element_pw.clear()
-element_pw.send_keys("")
+element_pw.send_keys("PASS")
 time.sleep(1)
 
 element_pw.send_keys(Keys.ENTER)
@@ -45,10 +45,10 @@ time.sleep(1)
 input("CAPTCHA 해결 후 Enter를 누르세요: ")
 # 화면 캡쳐해서 저장하기
 
-url_mail = "https://mail.naver.com/v2/folders/0/all"
-browser.get(url_mail)
-
-browser.save_screenshot("Website_Mail.png")
+#url_mail = "https://mail.naver.com/v2/folders/0/all"
+#browser.get(url_mail)
+apt-get update
+browser.save_screenshot("Website_J.png")
 
 #종료
 browser.quit()
