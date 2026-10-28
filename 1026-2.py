@@ -3,7 +3,7 @@ import time
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-
+import getpass
 
 url = "https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
 

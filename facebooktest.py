@@ -3,10 +3,10 @@ import urllib.request as req
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import time
+import getpass
 
-
-USER = "zzzxwe@jj.ac.kr"
-PASS = ""
+USER = input("아이디: ")
+PASS = getpass.getpass("비밀번호: ")
 
 session = requests.session()
 

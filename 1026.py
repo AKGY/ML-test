@@ -47,7 +47,6 @@ input("CAPTCHA 해결 후 Enter를 누르세요: ")
 
 #url_mail = "https://mail.naver.com/v2/folders/0/all"
 #browser.get(url_mail)
-apt-get update
 browser.save_screenshot("Website_J.png")
 
 #종료
