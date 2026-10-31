@@ -21,15 +21,15 @@ browser = webdriver.Firefox(service=service, options=options)
 browser.get(url)
 
 USER = input("네이버 아이디: ")
-#PASS = getpass.getpass("네이버 비밀번호: ") #비밀번호 보안입력
-PASS = input("네이버 비밀번호: ")
+PASS = getpass.getpass("네이버 비밀번호: ") #비밀번호 보안입력
+#PASS = input("네이버 비밀번호: ")
 
-pyperclip.copy(id)
+pyperclip.copy(USER)
 element_id = browser.find_element(By.ID, "id")
 element_id.send_keys(pyperclip.paste())
 time.sleep(2)
 
-pyperclip.copy(pw)
+pyperclip.copy(PASS)
 element_pw = browser.find_element(By.ID, "pw")
 element_pw.send_keys(pyperclip.paste())
 time.sleep(2)
