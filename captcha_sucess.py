@@ -66,7 +66,7 @@ with SB(
     captcha = sb.is_element_visible("#captcha")
     print("CAPTCHA:", captcha)
 
-    sb.save_screenshot("/sample/login_result.png")
+    sb.save_screenshot("/sample/Website_G.png")
 
     if captcha:
         print("CAPTCHA 발생")
