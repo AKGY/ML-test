@@ -24,3 +24,4 @@ print(text)
 print()
 
 print(type(output))
+#(class "list")
