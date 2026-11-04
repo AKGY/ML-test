@@ -11,7 +11,10 @@ import getpass
 
 url = "https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
 
+
+
 service = Service('/usr/local/bin/geckodriver')
+
 browser = webdriver.Firefox(service=service)
 
 browser.get(url)
@@ -20,11 +23,13 @@ id = input("네이버 아이디: ")
 pw = getpass.getpass("네이버 비밀번호: ")
 
 pyperclip.copy(id)
+element_id.clear()
 element_id = browser.find_element(By.ID, "id")
 element_id.send_keys(pyperclip.paste())
 time.sleep(2)
 
 pyperclip.copy(pw)
+element_pw.clear
 element_pw = browser.find_element(By.ID, "pw")
 element_pw.send_keys(pyperclip.paste())
 time.sleep(2)
@@ -64,11 +69,13 @@ mail_url = "https://mail.naver.com/"
 
 #다시한번
 pyperclip.copy(id)
+element_id.clear()
 element_id = browser.find_element(By.ID, "id")
 element_id.send_keys(pyperclip.paste())
 time.sleep(2)
 
 pyperclip.copy(pw)
+element_pw.clear()
 element_pw = browser.find_element(By.ID, "pw")
 element_pw.send_keys(pyperclip.paste())
 time.sleep(2)

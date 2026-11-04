@@ -84,4 +84,8 @@ with SB(
 
         sb.save_screenshot("/sample/Website3.png")
 
+        sb.uc_click('.mail_title_link')
+
+        sb.save_screenshot("/sample/Website_mail_inside.png")
+
 print("프로그램 종료")
