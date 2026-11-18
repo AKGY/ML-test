@@ -7,7 +7,7 @@ labels = [0, 1, 1, 0]
 
 clf.fit(datas, labels)
 
-examples = [[0, 1], [1,1]]
+examples = [[0, 1], [1, 1]]
 examples_label = [1 , 0]
 
 results = clf.predict(examples)
